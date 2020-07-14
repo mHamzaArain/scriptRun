@@ -3,12 +3,14 @@
 ![Contributors](svg_img/test.svg) ![BuildStatus](svg_img/contrib.svg)
 
 ## Phenomenon
+The phenomenon of this project is "Automation".
 
-## About
+## About Project
+We have divided this project into three features
 
-## Features
+### Features
 
-### Feature 1: 
+### Feature 1: Application Launcher
 * [ ] 
 * [ ] 
 * [ ] 
@@ -16,6 +18,13 @@
 * [ ] 
 
 ### Feature 2: 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+* [ ] 
+
+### Feature 3: 
 * [ ] 
 * [ ] 
 * [ ] 
