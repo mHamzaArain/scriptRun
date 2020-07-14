@@ -51,11 +51,19 @@ As javaFX is hectic for Linux machine we will compile it manually by following s
 3. Directory must be `Project` to follow other steps.
 4. Paste only `*.java` files inside `src` folder.
 5. Give permission to all *.java file for compilation.
-    ```sudo chmod 777 src/*.java```
+    ```
+    sudo chmod 777 src/*.java
+    ```
 6. For compilation of `*.java` files
-    ```javac --module-path $PATH_TO_FX --add-modules="javafx.controls","javafx.fxml" -d classes src/*.java```
+   
+   ```
+   javac --module-path $PATH_TO_FX --add-modules="javafx.controls","javafx.fxml" -d classes src/*.java
+   ```
 7. To run java file
-    ```cd classes ;  java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml ClassPath.className```
+   
+   ```
+   cd classes ;  java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml ClassPath.className
+   ```
 
 ## Liscense
 GNU
