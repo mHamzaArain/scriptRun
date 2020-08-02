@@ -1,0 +1,49 @@
+{
+    "button-configurations": {
+        "active-buttons": 0,
+        "unused-buttons": 8,
+        "total-buttons": 8
+    },
+    "button-attributes":{
+        "button-1": {
+            "position": "(0, 0)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-2": {
+            "position": "(0, 1)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-3": {
+            "position": "(1, 0)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-4": {
+            "position": "(1, 1)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-5": {
+            "position": "(2, 0)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-6": {
+            "position": "(2, 1)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-7": {
+            "position": "(3, 0)",
+            "name": "None",
+            "path": "None"
+        },
+        "button-8": {
+            "position": "(3, 1)",
+            "name": "None",
+            "path": "None"
+        }
+    }
+}
