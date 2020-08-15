@@ -1,0 +1,8 @@
+sudo chmod 777 src/*.java
+
+javac --module-path $PATH_TO_FX --add-modules="javafx.controls","javafx.fxml" -cp  "json-simple-1.1.jar"  -d classes src/*.java
+
+cd classes
+
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -cp "../json-simple-1.1.jar:." settingsbar.SettingsBar
+
