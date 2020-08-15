@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" layoutX="-1.0" prefHeight="276.0" prefWidth="277.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="settingsbar.FXMLDocumentController">
+<AnchorPane id="AnchorPane" layoutX="-1.0" prefHeight="276.0" prefWidth="514.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="settingsbar.FXMLDocumentController">
    <children>
-      <AnchorPane fx:id="anchor_topbar" prefHeight="42.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;">
+      <AnchorPane fx:id="anchor_topbar" layoutX="242.0" prefHeight="42.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;">
          <children>
             <ImageView fx:id="btn_appInstaller" fitHeight="26.0" fitWidth="26.0" layoutX="55.0" layoutY="5.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,7 +30,7 @@
                   <Image url="@images/shut.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="152.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btn_shell" fitHeight="26.0" fitWidth="26.0" layoutX="152.0" layoutY="5.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/shell.png" />
                </image>
@@ -45,24 +47,11 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anchor_appLauncher" layoutY="52.0" prefHeight="224.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
+      <AnchorPane fx:id="anchor_libraryInstaller" layoutX="242.0" layoutY="45.0" prefHeight="231.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
          <children>
-            <Button layoutX="22.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(0, 0)" textFill="#dddada" />
-            <Button layoutX="150.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(0, 1)" textFill="#dddada" />
-            <Button layoutX="21.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(1, 0)" textFill="#dddada" />
-            <Button layoutX="149.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(1, 1)" textFill="#dddada" />
-            <Button layoutX="21.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(2, 0)" textFill="#dddada" />
-            <Button layoutX="149.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(2, 1)" textFill="#dddada" />
-            <Button layoutX="20.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(3, 0)" textFill="#dddada" />
-            <Button layoutX="148.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(3, 1)" textFill="#dddada" />
-            <Button layoutX="103.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Add APP" textFill="#2e2e2e" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="anchor_libraryInstaller" layoutY="52.0" prefHeight="224.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
-         <children>
-            <TextField layoutX="22.0" layoutY="63.0" prefHeight="26.0" prefWidth="236.0" promptText="pip3 install &lt;Only library name&gt; " style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
-            <Button layoutX="101.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Insert" textFill="#2e2e2e" />
-            <TextField layoutX="22.0" layoutY="122.0" prefHeight="26.0" prefWidth="236.0" promptText="npm install &lt;Only library name&gt;" style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
+            <TextField fx:id="textField_python" layoutX="22.0" layoutY="63.0" prefHeight="26.0" prefWidth="236.0" promptText="pip3 install &lt;Only library name&gt; " style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
+            <Button fx:id="btn_insertLibrary" layoutX="101.0" layoutY="188.0" mnemonicParsing="false" onAction="#btn_insertLibrary_action" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Insert" textFill="#2e2e2e" />
+            <TextField fx:id="textField_javaScript" layoutX="22.0" layoutY="122.0" prefHeight="26.0" prefWidth="236.0" promptText="npm install &lt;Only library name&gt;" style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
             <Label layoutX="50.0" layoutY="7.0" text="Libraries installation" textFill="#aea7a7">
                <font>
                   <Font size="18.0" />
@@ -82,17 +71,91 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anchor_appInstaller" layoutY="52.0" prefHeight="224.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
+      <AnchorPane fx:id="anchor_appInstaller" layoutX="242.0" layoutY="45.0" prefHeight="231.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
          <children>
-            <TextField layoutX="22.0" layoutY="40.0" prefHeight="25.0" prefWidth="236.0" promptText="Enter software name" style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
+            <TextField fx:id="textField_softwareName" layoutX="22.0" layoutY="40.0" prefHeight="25.0" prefWidth="236.0" promptText="Enter software name" style="-fx-background-color: #515d61; -fx-text-fill: #dddada;" />
 
-            <Button layoutX="102.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Insert" textFill="#2e2e2e" />
-            <TextArea layoutX="23.0" layoutY="76.0" prefHeight="96.0" prefWidth="236.0" promptText="# Installation commnad(s)" style="-fx-control-inner-background: #515d61; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00;" />
+            <Button fx:id="btn_softwareInstall" layoutX="72.0" layoutY="188.0" mnemonicParsing="false" onAction="#btn_insertAppInShellFile_action" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Insert" textFill="#2e2e2e" />
+            <TextArea fx:id="textArea_softwareCommands" layoutX="23.0" layoutY="76.0" prefHeight="96.0" prefWidth="236.0" promptText="# Installation commnad(s)" style="-fx-control-inner-background: #515d61; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00;" />
             <Label layoutX="63.0" layoutY="13.0" prefHeight="27.0" prefWidth="171.0" text="Software Installation" textFill="#aea7a7">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_appLauncher" layoutX="242.0" layoutY="45.0" prefHeight="231.0" prefWidth="283.0" style="-fx-background-color: #2E2E2E;" visible="false">
+         <children>
+            <Button fx:id="btn_1" layoutX="22.0" layoutY="18.0" mnemonicParsing="false" onAction="#btn_1_action" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(0, 0)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_2" layoutX="150.0" layoutY="18.0" mnemonicParsing="false" onAction="#btn_2_action" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(0, 1)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_3" layoutX="21.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn_3_action" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(1, 0)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_4" layoutX="149.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn_4_action" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(1, 1)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_5" layoutX="21.0" layoutY="93.0" mnemonicParsing="false" onAction="#btn_5_action" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(2, 0)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_6" layoutX="149.0" layoutY="93.0" mnemonicParsing="false" onAction="#btn_6_action" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(2, 1)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_7" layoutX="20.0" layoutY="130.0" mnemonicParsing="false" onAction="#btn_7_action" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(3, 0)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_8" layoutX="148.0" layoutY="130.0" mnemonicParsing="false" onAction="#btn_8_action" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #515d61; -fx-border-radius: 5em;" text="software(3, 1)" textFill="#dddada" visible="false" />
+            <Button fx:id="btn_addApp" layoutX="112.0" layoutY="188.0" mnemonicParsing="false" onAction="#btn_edit_app_action" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ff921f; -fx-border-radius: 5em;" text="Edit APP" textFill="#2e2e2e" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_appLauncherJSON" layoutX="-3.0" prefHeight="276.0" prefWidth="243.0" style="-fx-background-color: #2E2E2E;" visible="false">
+         <children>
+            <TabPane layoutX="3.0" layoutY="42.0" prefHeight="231.0" prefWidth="236.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tab_pane" styleClass="style.css" text="buttonConfig.json">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="textArea_appLauncher" layoutX="5.0" layoutY="3.0" prefHeight="199.0" prefWidth="229.0" style="-fx-control-inner-background: #515d61; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00;">
+                                 <font>
+                                    <Font name="Consolas" size="9.0" />
+                                 </font></TextArea>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <ImageView fx:id="btn_configExit" fitHeight="26.0" fitWidth="26.0" layoutX="198.0" layoutY="7.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_configSave" fitHeight="26.0" fitWidth="26.0" layoutX="16.0" layoutY="7.0" onMousePressed="#handleBtnConfigSaveAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/save.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_shellFile" layoutX="-3.0" prefHeight="276.0" prefWidth="243.0" style="-fx-background-color: #2E2E2E;" visible="false">
+         <children>
+            <TabPane layoutX="3.0" layoutY="42.0" prefHeight="231.0" prefWidth="236.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab fx:id="tab_pane1" styleClass="style.css" text="install.sh">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="textArea_shellFile" layoutX="5.0" layoutY="3.0" prefHeight="199.0" prefWidth="229.0" style="-fx-control-inner-background: #515d61; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00;">
+                                 <font>
+                                    <Font name="Consolas" size="9.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <ImageView fx:id="btn_shellExit" fitHeight="26.0" fitWidth="26.0" layoutX="198.0" layoutY="7.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_shellFileSave" fitHeight="26.0" fitWidth="26.0" layoutX="16.0" layoutY="7.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/save.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

@@ -7,15 +7,15 @@ package settingsbar;
 
 import javafx.application.Application;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
+//import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.ImageView;
+//import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.scene.image.ImageView;
+//import javafx.scene.image.ImageView;
 
 /**
  *
@@ -36,9 +36,6 @@ public class SettingsBar extends Application {
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-//                xOffset = event.getSceneX();
-//                yOffset = event.getSceneY();
-
                   xOffSet = event.getSceneX();
                   yOffSet = event.getSceneY();
             }
@@ -46,10 +43,7 @@ public class SettingsBar extends Application {
         
         root.setOnMouseDragged(new EventHandler<MouseEvent>(){
            @Override
-           public void handle(MouseEvent event){
-//               stage.setX(event.getScreenX() - xOffset);
-//               stage.setX(event.getScreenY() - yOffset);
-                
+           public void handle(MouseEvent event){             
                  stage.setX(event.getScreenX() - xOffSet);
                  stage.setY(event.getScreenY() - yOffSet);
                  stage.setOpacity(0.8f);
@@ -62,10 +56,10 @@ public class SettingsBar extends Application {
                 stage.setOpacity(1.0f);
            }           
         });
-        
-        
+         
         Scene scene = new Scene(root);
         scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
+        scene.getStylesheets().add("style.css");
         stage.setScene(scene);
         stage.resizableProperty().setValue(false);
         stage.show();

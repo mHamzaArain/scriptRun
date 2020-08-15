@@ -8,7 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="SettingsBar.jar" size="12726" download="eager" />
+    <jar href="SettingsBar.jar" size="23208" download="eager" />
+    <jar href="lib\json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib\rsyntaxtextarea.jar" size="921777" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SettingsBar" >
     <param name="requiredFXVersion" value="8.0+"/>
