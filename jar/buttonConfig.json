@@ -39,15 +39,15 @@
             "button_no": 6,
             "active": true,
             "position": "(2, 1)",
-            "name": "Netbeans",
-            "path": "None"
+            "name": "AD Eagle",
+            "path": "/media/hamza/linux1/Softwares/Autodesk_EAGLE_9.5.2_English_Linux_64bit/eagle-9.5.2/eagle"
         },
         "button-7": {
             "button_no": 7,
             "active": true,            
             "position": "(3, 0)",
-            "name": "AD Eagle",
-            "path": "/media/hamza/linux1/Softwares/Autodesk_EAGLE_9.5.2_English_Linux_64bit/eagle-9.5.2/eagle"
+            "name": "None",
+            "path": "None"
         },
         "button-8": {
             "button_no": 8,
