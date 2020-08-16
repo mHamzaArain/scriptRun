@@ -29,7 +29,6 @@ else
                     5 "Monodevelop" off
                     6 "Pycharm" off
                     7 "IntelliJ" off
-                    8 "" off
                     9 "Arduino-1.8.9" off
                     10 "Sublime Text 3*" off
                     11 "Anaconda" off
@@ -38,9 +37,6 @@ else
                     14 "VNC Viewer" off
                     15 "Gluon Scenebuilder(Java)" off
                     16 "Arduino" off
-                    17 "" off
-                    18 "Software A" off
-                    19 "Nawn" off
                 )
         choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 		clear
@@ -144,19 +140,7 @@ else
                         16)
                             echo "Arduino..." 
                             sudo install arduino
-                            ;;                            
-                        17)
-                            echo "..." 
-                            
-                            ;;                            
-                        18)
-                            echo "Software A..." 
-                            sudo install softwareA
-                            ;;                            
-                        19)
-                            echo "Nawn..." 
-                            gugkjgk
-                            ;;                                                                                                                                                                                 
+                            ;;                                                                                                                                                                                                          
         esac
 	done
 fi
