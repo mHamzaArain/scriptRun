@@ -42,7 +42,7 @@ This is very simple script that everything you will enter application & applicat
 
                               # Instaling libraries...
                               apt-get update
-                              pip3 install numpy pandas matplotlib scikit-learn tensorflow nltk keras seaborn beautifulsoup4 requests a a libpy lib
+                              pip3 install
                               ;;                            
                            2)
                               echo "Preparing python essentials..." 
