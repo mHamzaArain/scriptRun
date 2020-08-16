@@ -8,6 +8,9 @@ The phenomenon of this project is "Automation".
 ## About Project
 We have divided this project into three features.
 
+
+![]( svg_img/pic.PNG )
+
 ## Basic Script
 This is a BASH script that will auto install applications on Linux OS.
 This is very simple script that everything you will enter application & application libraries. 
