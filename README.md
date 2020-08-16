@@ -11,7 +11,9 @@ We have divided this project into three features.
 ## Basic Script
 This is a BASH script that will auto install applications on Linux OS.
 This is very simple script that everything you will enter application & application libraries. 
-```Filename: install.sh``` 
+   ```
+   Filename: install.sh
+   ``` 
 
    ```   
    if [[ $EUID -ne 0 ]]; then
