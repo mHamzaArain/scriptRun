@@ -1,0 +1,60 @@
+[{
+    "button-attributes":{
+        "button-1": {
+            "button_no": 1,
+            "active": true,
+            "position": "(0, 0)",
+            "name": "Arduino",
+            "path": "/media/hamza/linux1/Softwares/arduino-1.8.9/arduino"
+        },
+        "button-2": {
+            "button_no": 2,
+            "active": true,
+            "position": "(0, 1)",
+            "name": "Smartgit",
+            "path": "/media/hamza/linux1/Softwares/smartgit-linux-20_1_2/smartgit/bin/smartgit.sh"
+        },
+        "button-3": {
+            "button_no": 3,
+            "active": true,
+            "position": "(1, 0)",
+            "name": "Android Studio",
+            "path": "/media/hamza/linux1/Softwares/android-studio-ide-193.6514223-linux/android-studio/bin/studio.sh"
+        },
+        "button-4": {
+            "button_no": 4,
+            "active": true,
+            "position": "(1, 1)",
+            "name": "IntelliJ",
+            "path": "/media/hamza/linux1/Softwares/ideaIC-2019.3.1/idea-IC-193.5662.53/bin/idea.sh"
+        },
+        "button-5": {
+            "button_no": 5,
+            "active": true,
+            "position": "(2, 0)",
+            "name": "Pycharm",
+            "path": "/media/hamza/linux1/Softwares/pycharm-community-2019.3.1/bin/pycharm.sh"
+        },
+        "button-6": {
+            "button_no": 6,
+            "active": true,
+            "position": "(2, 1)",
+            "name": "Netbeans",
+            "path": "None"
+        },
+        "button-7": {
+            "button_no": 7,
+            "active": true,            
+            "position": "(3, 0)",
+            "name": "AD Eagle",
+            "path": "/media/hamza/linux1/Softwares/Autodesk_EAGLE_9.5.2_English_Linux_64bit/eagle-9.5.2/eagle"
+        },
+        "button-8": {
+            "button_no": 8,
+            "active": true,
+            "position": "(3, 1)",
+            "name": "None",
+            "path": "None"
+        }
+    }
+}]
