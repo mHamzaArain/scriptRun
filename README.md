@@ -169,7 +169,7 @@ As javaFX is hectic for Linux machine we will compile it manually by following s
 7. To run java file
    
    ```
-   cd classes; java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -cp "../json-simple-1.1.jar:." settingsbar.SettingsBar
+   cd classes; java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -cp "../json-simple-1.1.jar:." scriptrun.ScriptRun
    ```
 ## Execution of ```SettingsBar.jar``` File 
    To run this application.
