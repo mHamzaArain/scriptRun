@@ -29,7 +29,7 @@ else
                     5 "Monodevelop" off
                     6 "Pycharm" off
                     7 "IntelliJ" off
-                    8 "" off
+                    8 "git" off
                     9 "Arduino-1.8.9" off
                     10 "Sublime Text 3*" off
                     11 "Anaconda" off
@@ -55,12 +55,12 @@ else
 
                             # Instaling libraries...
                             apt-get update
-                            pip3 install numpy pandas matplotlib scikit-learn tensorflow nltk keras seaborn beautifulsoup4 requests lmlm
+                            pip3 install numpy pandas matplotlib scikit-learn tensorflow nltk keras seaborn beautifulsoup4 requests 
                             ;;                            
                         2)
                             echo "Preparing python essentials..." 
                             apt-get update
-                            npm install ghf
+                            npm install 
                             ;;                            
                         3)
                             echo "Xdman..." 
@@ -93,7 +93,7 @@ else
                             apt-get update
                             ;;                            
                         8)
-                            echo "..." 
+                            echo "git..." 
                             # Installing git
                             apt install git-all
                             
@@ -140,23 +140,7 @@ else
                         15)
                             echo "Gluon Scenebuilder(Java)..." 
                             sudo dpkg -i /media/hamza/linux1/Softwares/scenebuilder-11.0.0.deb
-                            ;;                            
-                        16)
-                            echo "this..." 
-                            sudo install this
-                            ;;                            
-                        17)
-                            echo "this..." 
-                            sudo install this
-                            ;;                            
-                        18)
-                            echo "this..." 
-                            sudo this
-                            ;;                            
-                        19)
-                            echo "those..." 
-                            sudo those
-                            ;;                                                                                                                                                                                 
+                            ;;                                                                                                                                                                                                           
         esac
 	done
 fi

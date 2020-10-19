@@ -1,5 +1,5 @@
 [{
-    "button-attributes":{
+    "button-attributes": {
         "button-1": {
             "button_no": 1,
             "active": true,
@@ -44,14 +44,14 @@
         },
         "button-7": {
             "button_no": 7,
-            "active": true,            
+            "active": true,
             "position": "(3, 0)",
             "name": "AD Eagle",
             "path": "/media/hamza/linux1/Softwares/Autodesk_EAGLE_9.5.2_English_Linux_64bit/eagle-9.5.2/eagle"
         },
         "button-8": {
             "button_no": 8,
-            "active": true,
+            "active": false,
             "position": "(3, 1)",
             "name": "None",
             "path": "None"
